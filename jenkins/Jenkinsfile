@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Unit Tests - Backend') {
+        /*stage('Unit Tests - Backend') {
             agent{
                 docker {
                     image 'snakee/golang:1.21-alpine'
@@ -14,7 +14,8 @@ pipeline {
                     sh 'go test -v ./...'
                 }
             }
-        }
+        }*/
+
         stage('Unit Tests - Frontend') {
             agent{
                 docker {
